@@ -2,10 +2,10 @@
 
 /* Mirror
 
-  Data In:
+  Data In: Some text
 
 
-  Data Out:
+  Data Out: txet emoS | Some text
 
 
   Test Cases:

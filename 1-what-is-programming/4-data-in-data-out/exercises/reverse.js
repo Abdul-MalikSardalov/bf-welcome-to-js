@@ -2,10 +2,10 @@
 
 /* Reverse
 
-  Data In:
+  Data In: reverse 
 
 
-  Data Out:
+  Data Out: reverse -> esrever
 
 
   Test Cases:
