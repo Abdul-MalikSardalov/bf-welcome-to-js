@@ -11,7 +11,7 @@
 
 // trace the program a few times with different values
 
-let x = 'Pieter';  // declare the variable x and init value Pieter
+let x = 'Pieter'; // declare the variable x and init value Pieter
 // let x = 'Blake'; // declare the variable x and init value Blake
 // let x = 'George';  // declare the variable x and init value George
 

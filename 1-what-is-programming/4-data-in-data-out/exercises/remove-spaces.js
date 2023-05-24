@@ -2,10 +2,11 @@
 
 /* Remove Spaces
 
-  Data In:
+  Data In: Let me check is it true or not
 
 
-  Data Out:
+  Data Out: before: Let me check is it true or not
+            after : Letmecheckisittrueornot
 
 
   Test Cases:

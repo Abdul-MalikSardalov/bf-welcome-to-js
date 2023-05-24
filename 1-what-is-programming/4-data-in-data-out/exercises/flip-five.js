@@ -2,10 +2,10 @@
 
 /* Flip Five
 
-  Data In:
+  Data In: Malik
 
 
-  Data Out:
+  Data Out: kilaM
 
 
   Test Cases:
