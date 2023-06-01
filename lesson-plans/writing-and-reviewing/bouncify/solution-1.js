@@ -23,3 +23,35 @@
       '0 . x . 0'         -> '0 . X . 0'
 
 */
+
+// var. to store user input
+let message = '';
+
+// loop for user selection options
+while (true){
+  const userInput = prompt('Write something');
+  // if the user chooses cancel
+  if (userInput === null){
+    alert('there is no escape!');
+    break;
+  }
+  // if the user does not write anything
+  if (userInput === ''){
+    alert('no empty string allowed');
+    break;
+  }
+  // if the user does everything right
+  if (userInput){
+    message = userInput;
+    break;
+  }
+}
+
+// variable for final text
+let newMessage = '';
+const exceptions = ' 1234567890!./'
+// loop to get text
+
+
+// final text output
+alert(newMessage)

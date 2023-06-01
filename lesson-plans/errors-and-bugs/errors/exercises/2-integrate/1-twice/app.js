@@ -11,13 +11,13 @@ import {
   name:
   message:
 
-  location:
+  location: line 32
 
   life cycle:
 
-  the mistake:
+  the mistake: + sign instead of = when assigning a value to a variable
 
-  the fix(es):
+  the fix(es): swap + to =
 */
 
 whenFormDataChanges('user-data', () => {
@@ -29,7 +29,7 @@ whenFormDataChanges('user-data', () => {
 
   // --- repeat the text ---
 
-  let repeated + text + '\n' + text;
+  let repeated = text + '\n' + text;
 
   // --- display the repeated text ---
 
