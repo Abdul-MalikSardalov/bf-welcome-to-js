@@ -29,21 +29,23 @@ console.log('--- begin program ---');
 
 /* --- gather user input --- */
 
-let input = prompt(_);
-console.log('input:', input);
+let input = prompt('Write something with 10 characters');
 
-/* --- declare initial output --- */
+let output ='';
+let rightCharactersNumber = 10;
 
-let output = _;
+while (input !== null){
+  if (input.length === 10){
+    output += input + ' is perfect!';
+  }
+  if (input.length <= 10){
+    let shortage = rightCharactersNumber - input.length;
+    output += input + `is ${shortage} characters too short`;
+  }
+}
 
-/* --- create final output --- */
+console.log(output)
 
-/* --- alert the result --- */
-
-console.log('output:', output);
-alert(output);
-
-console.log('--- end program ---');
 
 /*
   checklist:

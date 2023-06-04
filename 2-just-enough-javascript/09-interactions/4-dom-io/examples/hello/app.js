@@ -6,7 +6,7 @@ import {
 } from '../../../../../lib/dom-io/index.js';
 
 whenFormDataChanges('user-info', () => {
-  // debugger;
+  debugger;
   console.log('\n--- form data changed ---');
 
   // --- read user input ---
