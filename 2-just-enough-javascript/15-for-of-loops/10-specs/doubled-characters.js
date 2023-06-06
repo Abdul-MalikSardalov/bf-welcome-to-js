@@ -24,22 +24,19 @@ console.log('--- begin program ---');
 
 /* --- gather user input --- */
 
-let input = _;
-while (_) {}
-console.log('input:', input);
-
-/* --- declare initial output --- */
-
-let output = _;
-
-/* --- create final output --- */
-
-for (let _ of _) {
+let input = null;
+while (input === null) {
+  input = prompt('Wtire something');
 }
 
-console.log('output:', output);
-
+/* --- declare initial output --- */
+/* --- create final output --- */
 /* --- alert the result --- */
+let output = '';
+
+for (let char of input) {
+  output += char + char;
+}
 
 alert(output);
 

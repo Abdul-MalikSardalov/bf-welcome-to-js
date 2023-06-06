@@ -1,10 +1,10 @@
 'use strict';
 
-__;
+let a = 'Hello';
 console.log(a);
 
 {
-  __;
+  let a = 'Bye';
   console.log(a);
 }
 

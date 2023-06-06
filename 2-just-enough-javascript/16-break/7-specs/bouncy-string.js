@@ -28,17 +28,22 @@ console.log('--- begin program ---');
 
 /* --- gather user input --- */
 
-let input = _;
-while (_) {}
+let input = null;
+while (input === null) {
+  input = prompt('Write something');
+}
 console.log('input:', input);
 
 /* --- declare initial output --- */
-
-let output = _;
-
+let output = '';
 /* --- create final output --- */
-
-for (let _ of _) {
+for (let index = 0; index < input.length; index++) {
+  let char = input[index];
+  if (index % 2 === 1) {
+    output += char.toUpperCase();
+  } else {
+    output += char.toLowerCase();
+  }
 }
 
 /* --- alert the result --- */

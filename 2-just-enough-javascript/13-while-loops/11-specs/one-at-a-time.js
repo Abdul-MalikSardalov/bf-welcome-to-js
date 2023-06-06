@@ -20,17 +20,40 @@ console.log('--- begin program ---');
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = '';
 
-/* --- create final output --- */
 
-while (_) {}
+while (true){
+  let userInput = prompt('Write one character');
 
-/* --- alert the result --- */
+  if (!userInput){
+    alert('You need write something');
+    continue;
+  }
 
-console.log('output:', output);
+  else if (userInput === ''){
+    alert('Your text is empty');
+    continue;
+  }
+
+  else if (userInput.length > 1){
+    alert('Write only one character');
+    continue;
+  }
+  else{
+    output += userInput;
+    let isEnough = confirm('Do you want add more?');
+    if (isEnough){
+      continue;
+    }
+    else{
+      break
+    }
+  }
+}
+
+
 alert(output);
-
 console.log('--- end program ---');
 
 /*

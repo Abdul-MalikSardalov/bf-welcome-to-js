@@ -37,23 +37,40 @@
       -> 'i just learned something cool about frogs!\n\n- "green frogs do not exist."'
  */
 
-let userInput = '';
+// Create a variable userInput and initialize it with an empty string.
+let userInput = ''; 
 
-let inputIsAboutFrogs = false;
-while (!inputIsAboutFrogs) {
-  userInput = prompt('tell me something about frogs');
+// Create a variable inputIsAboutFrogs and initialize it with the value false.
+let inputIsAboutFrogs = false; 
 
-  if (userInput === '' || userInput === null) {
-    alert('that is not something');
-    continue;
+// Start a while loop that will run as long as inputIsAboutFrogs is false.
+while (!inputIsAboutFrogs) { 
+
+// Display a prompt asking the user to enter something about frogs and assign the entered value to the userInput variable.
+  userInput = prompt('tell me something about frogs'); 
+
+  // Check if userInput is an empty string or null.
+  // Display the message "that is not something".
+  // Skip the rest of the current iteration and move to the next iteration.
+  
+  if (userInput === '' || userInput === null) { 
+    alert('that is not something'); 
+    continue; 
   }
 
-  if (userInput.toLowerCase().includes('frog')) {
-    inputIsAboutFrogs = true;
-    continue;
-  }
+// Check if userInput (converted to lowercase) includes the word "frog".
+// Set inputIsAboutFrogs to true.
+// Skip the rest of the current iteration and move to the next iteration.
 
-  alert('nope, not about frogs.  try again.');
+  if (userInput.toLowerCase().includes('frog')) { 
+    inputIsAboutFrogs = true; 
+    continue; 
+  }
+// Display the message "nope, not about frogs. try again."
+
+  alert('nope, not about frogs.  try again.'); 
 }
+// Display a message with the content of the userInput variable.
 
-alert('i just learned something cool about frogs!\n\n- "' + userInput + '"');
+alert('i just learned something cool about frogs!\n\n- "' + userInput + '"'); 
+

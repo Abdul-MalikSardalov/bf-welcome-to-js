@@ -9,7 +9,6 @@
     - given it is ten characters long, they are told it's perfect
     - given it is longer than 10 characters, they are told how much too long
 
-
   test cases:
     the user cancels:
       null -> ':('
@@ -27,23 +26,31 @@
 
 console.log('--- begin program ---');
 
-/* --- gather user input --- */
+let input = prompt('Write something with 10 characters');
 
-let input = prompt(_);
-console.log('input:', input);
+let output = '';
+let rightCharactersNumber = 10;
 
-/* --- declare initial output --- */
+while (true) {
+  if (input === null) {
+    output += ':(';
+    break;
+  }
+  if (input.length === 10) {
+    output += input + ' is perfect!';
+    break;
+  } else if (input.length < 10) {
+    let shortage = rightCharactersNumber - input.length;
+    output += input + ` is ${shortage} characters too short`;
+    break;
+  } else if (input.length > 10) {
+    let shortage = input.length - rightCharactersNumber;
+    output += input + ` is ${shortage} characters too long`;
+    break;
+  }
+}
 
-let output = _;
-
-/* --- create final output --- */
-
-/* --- alert the result --- */
-
-console.log('output:', output);
 alert(output);
-
-console.log('--- end program ---');
 
 /*
   checklist:

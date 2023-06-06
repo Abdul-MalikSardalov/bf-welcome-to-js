@@ -24,12 +24,23 @@ console.log('--- begin program ---');
 
 /* --- declare initial output --- */
 
-let output = _;
+
 
 /* --- create final output --- */
+let input = null;
+while (input === null) {
+  input = prompt('Write something');
+}
 
-while (_) {}
+let output = '';
 
+if (input.length < 10){
+  alert('Too short')
+}else if (input.length > 10){
+  alert('Too long')
+}else{
+  output += input + ' is ok';
+}
 /* --- alert the result --- */
 
 console.log('output:', output);

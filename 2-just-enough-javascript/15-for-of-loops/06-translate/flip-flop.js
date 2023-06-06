@@ -16,17 +16,27 @@
 /* ---   ?   --- */
 
 // normalPhrase <- null
-
+let  normalPhrase = null;
 // WHILE: normalPhrase === null
 //   normalPhrase <- prompt('enter something to flipflop')
 // :END WHILE
-
+while (normalPhrase === null){
+  normalPhrase = prompt('enter something to flipflop');
+}
 /* ---   ?   --- */
 
 // previous <- ''
-
+let previous = '';
 // flipFlopped <- ''
-
+let flipFlopped = '';
+for (let current of normalPhrase){
+  if (previous !== ''){
+    flipFlopped += current + previous;
+    previous = '';
+  }else {
+    previous = current;
+  }
+}
 // FOR: current OF normalPhrase
 //   IF: previous !== ''
 //     flipFlopped <- flipFlopped + current + previous
@@ -37,11 +47,13 @@
 // :END FOR-OF
 
 /* ---   ?   --- */
-
+if (flipFlopped.length < normalPhrase.length){
+  flipFlopped += normalPhrase[normalPhrase.length - 1]
+}
 // IF: flipFlopped.length < normalPhrase.length
 //   flipFlopped <- flipFlopped + normalPhrase[normalPhrase.length - 1]
 // :END IF
 
 /* ---   ?   --- */
 
-// alert(flipFlopped)
+alert(flipFlopped);

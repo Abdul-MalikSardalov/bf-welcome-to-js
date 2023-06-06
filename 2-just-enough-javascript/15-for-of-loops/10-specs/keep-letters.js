@@ -24,28 +24,22 @@
 
 console.log('--- begin program ---');
 
-/* --- gather user input --- */
 
-let input = _;
-while (_) {}
-console.log('input:', input);
-
-/* --- declare characters to keep --- */
-
-let toKeep = _;
-
-/* --- declare initial output --- */
-
-let output = _;
-
-/* --- create final output --- */
-
-for (let _ of _) {
+let input = null;
+while (input === null) {
+  input = prompt('Write something');
 }
 
+/* --- declare characters to keep --- */
+/* --- declare initial output --- */
+/* --- create final output --- */
 /* --- alert the result --- */
 
-console.log('output:', output);
+let toKeep;
+let output = '';
+for (let char of input){
+  
+}
 alert(output);
 
 console.log('--- end program ---');

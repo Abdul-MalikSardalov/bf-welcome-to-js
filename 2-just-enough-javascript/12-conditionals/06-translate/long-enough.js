@@ -15,8 +15,23 @@
 /* ---   ?   --- */
 
 // input <- prompt('enter anything longer than 5 characters')
+let userInput = prompt('enter anything longer than 5 characters');
 
-// IF: input !== null
+let message = '';
+
+if (userInput === null) {
+  alert(':(');
+} else {
+  if (userInput.length < 5) {
+    message += 'too short'
+  } else if (userInput.length > 5) {
+    message += 'Long enough';
+  } else {
+    message += 'exactly 5!';
+  }
+}
+
+alert(message);
 //   IF: input.length < 5
 /* ---   ?   --- */
 //     message <- 'too short'

@@ -24,11 +24,13 @@ console.log('--- begin program ---');
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = '';
 
 /* --- create final output --- */
-
-while (_) {}
+let input = null;
+while (input === null) {
+  input = prompt('Write something');
+}
 
 /* --- alert the result --- */
 
