@@ -23,16 +23,27 @@ console.log('--- begin program ---');
 
 /* --- declare initial output --- */
 
-let output = _;
-
+let output = '';
+let correctCharacterNumber = 10;
 /* --- create final output --- */
+let userInput;
+while (true) {
+  userInput = prompt('Enter text with 10 characters');
+  if (userInput === null){
+    alert('You need write something');
+  }
+  else if (userInput.length < 10){
+    alert(`Your text too short. Add ${correctCharacterNumber - userInput.length} more characters` );
+  }
+  else if (userInput.length > 10){
+    alert(`Your text too long. Remove ${userInput.length - correctCharacterNumber} characters`);
+  }
+  else{
+    alert('Very good. ' + 'Thanks');
+    break;
+  }
+}
 
-while (_) {}
-
-/* --- alert the result --- */
-
-console.log('output:', output);
-alert(output);
 
 console.log('--- end program ---');
 

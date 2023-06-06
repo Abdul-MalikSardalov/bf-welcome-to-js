@@ -36,23 +36,18 @@
 console.log('--- begin program ---');
 
 /* --- gather user input --- */
+let text = prompt('Write firts word');
+let query = prompt('Write second word');
+let output;
 
-let text = prompt(_);
-console.log('text:', text);
+if (text === null || query === null) {
+  alert(':(');
+} else if (text.toLowerCase().includes(query.toLowerCase())) {
+  alert(`"${text}" does include "${query}"`);
+} else {
+  alert(`${text} does not includes ${query}`);
+}
 
-let query = prompt(_);
-console.log('query:', query);
-
-/* --- declare initial output --- */
-
-let output = _;
-
-/* --- create final output --- */
-
-/* --- alert the result --- */
-
-console.log('output:', output);
-alert(output);
 
 console.log('--- end program ---');
 

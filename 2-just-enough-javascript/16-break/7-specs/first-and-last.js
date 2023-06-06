@@ -29,15 +29,29 @@
 
 console.log('--- begin program ---');
 
-/* --- declare initial output --- */
 
-let output = _;
-
-/* --- create final output --- */
-
-while (_) {}
-
-/* --- alert the result --- */
+let output = '';
+let newMessage;
+while (true) {
+  let userInput = prompt(
+    `Write something with capital letter and '.' in the end`,
+  );
+  if (userInput === null) {
+    alert('You need write something');
+  } else if (userInput.length < 2) {
+    alert('Too short');
+  } else if (userInput[0] !== userInput[0].toUpperCase()) {
+    alert('Your first latter should be uppercase');
+  } else if (userInput[userInput.length - 1] !== '.') {
+    alert('Must end with "."');
+  } else {
+    if ( userInput[userInput.length - 1] === '.' || userInput[0] === userInput[0].toUpperCase()) {
+      output = userInput[0].toLowerCase() + userInput.substring(1, userInput.length - 1);
+      break;
+    }
+  }
+}
+alert(output);
 
 console.log('output:', output);
 alert(output);

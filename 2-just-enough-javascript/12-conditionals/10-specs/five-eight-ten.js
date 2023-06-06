@@ -40,18 +40,43 @@ console.log('--- begin program ---');
 
 /* --- gather user input --- */
 
-let input = prompt(_);
-console.log('input:', input);
+let input = prompt('Write something with 10 characters');
+
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = '';
 
 /* --- create final output --- */
-
-/* --- alert the result --- */
-
-console.log('output:', output);
+while (true){
+  if (input === null){
+    output += ':(';
+  }
+  else if (input === ''){
+    output += 'not even close';
+    break;
+  }
+  else if (input.length < 5){
+    output += 'better';
+    break;
+  }
+  else if (input.length < 8){
+    output += 'almost there';
+    break;
+  }
+  else if (input.length < 10){
+    output += 'so close';
+    break;
+  }
+  else if (input.length === 10){
+    output += 'perfect!'; 
+    break;
+  }
+  else if (input.length > 10) {
+    output += 'too long';
+    break
+  }
+}
 alert(output);
 
 console.log('--- end program ---');
